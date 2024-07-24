@@ -1,6 +1,6 @@
 console.log("BeforeRender desde repo...");
 
-var fn = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/Controls/functions.mjs', fresh: true, url: true }));
+var fn = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/functions.mjs', fresh: true, url: true }));
 console.log(fn.saludar());
 
 debugger;
