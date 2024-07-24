@@ -4,7 +4,7 @@ debugger;
 
 var $d = $(document);
 
-var fld = await dSession.foldersGetFromId(1003);
-var res = await fld.search();
+var fldAreas = await dSession.foldersGetFromId(1005);
+var res = await fldAreas.search();
 
 console.log(res);
