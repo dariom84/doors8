@@ -4,7 +4,7 @@ debugger;
 
 var $d = $(document);
 
-var fldAreas = await dSession.foldersGetFromId(1005);
+var fldAreas = await dSession.foldersGetFromId(1008);
 var res = await fldAreas.search({
                                     fields: 'id, name',
                                     formula: 'id <> 1',
