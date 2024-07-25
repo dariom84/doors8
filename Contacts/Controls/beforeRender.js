@@ -40,9 +40,9 @@ $d.on('renderControl', (ev) => {
 
 
 $d.on('afterRender', (ev) => {
-    debugger;
+    console.log("afterRender desde repo");
 });
 
 $d.on('afterFillControls', (ev) => {
-    debugger;
+    console.log("afterFillControls desde repo");
 });
