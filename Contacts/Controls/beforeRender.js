@@ -20,4 +20,5 @@ var $d = $(document);
 
 $d.on('renderControl', (ev) => {
     debugger;
+    var ctx = ev.detail;
 });
