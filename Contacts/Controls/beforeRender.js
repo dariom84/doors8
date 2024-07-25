@@ -32,7 +32,7 @@ $d.on('renderControl', (ev) => {
             break;
         case 'htmlRaw_Message':
             debugger;
-            ctx.$this.append(`<h3>${doc.surname}, ${doc.name}</h3>`);
+            ctx.$this.append(`<h3>${doc.fields('surname').value}, ${doc.fields('NAME').value}</h3>`);
             break;
     }
 });
