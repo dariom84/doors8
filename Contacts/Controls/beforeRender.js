@@ -29,8 +29,9 @@ $d.on('renderControl', (ev) => {
         case 'name':
             debugger;
             break;
-        case 'surname':
+        case 'date_birth':
             debugger;
+            bsctl.datetimerpicker('disabledDates', ['26/7/2024'])
             break;
     }
 });
