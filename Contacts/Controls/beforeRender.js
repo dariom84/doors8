@@ -5,8 +5,6 @@ console.log(fn.saludar());
 
 debugger;
 
-var $d = $(document);
-
 var fldAreas = await dSession.foldersGetFromId(1008);
 var res = await fldAreas.search({
                                     fields: 'id, area',
@@ -16,3 +14,10 @@ var res = await fldAreas.search({
                                 })
 
 console.log(res);
+
+
+var $d = $(document);
+
+$d.on('renderControl', (ev) => {
+    debugger;
+});
