@@ -29,7 +29,7 @@ $d.on('renderControl', (ev) => {
         case 'date_birth': //control de tipo datepicker, le deshabilito una fecha
             debugger;
             ctx.bsctl.datetimepicker('disabledDates', ['26/7/2024']);
-            doc.fields('date_birth', new Date());
+            if (doc.isNew) doc.fields('date_birth', new Date());
             break;
         case 'htmlRaw_Message':
             debugger;
