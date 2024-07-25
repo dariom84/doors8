@@ -6,6 +6,9 @@ debugger;
 var fn = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/functions.mjs', fresh: true, url: true }));
 console.log(fn.saludar());
 
+//Ejemplo include de un modulo de funciones
+var rc = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/renderControls.mjs', fresh: true, url: true }));
+
 //Ejemplo de un seach a la carpeta de areas por id
 var fldAreas = await dSession.foldersGetFromId(1008);
 var res = await fldAreas.search({
@@ -22,20 +25,7 @@ var $d = $(document);
 
 //Me subo al evento renderControl y pregunto por cada control que va dibujar
 $d.on('renderControl', (ev) => {
-    var ctx = ev.detail;
-    var ctlName = ctx.ctl.NAME;
-
-    switch (ctlName) {
-        case 'date_birth': //control de tipo datepicker, le deshabilito una fecha
-            debugger;
-            ctx.bsctl.datetimepicker('disabledDates', ['26/7/2024']);
-            if (doc.isNew) doc.fields('date_birth', new Date());
-            break;
-        case 'htmlRaw_Message':
-            debugger;
-            if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, ${doc.fields('NAME').value}</h3>`);
-            break;
-    }
+    rc.renderControl(ev.detail);
 });
 
 
