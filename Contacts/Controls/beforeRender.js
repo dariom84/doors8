@@ -37,3 +37,12 @@ $d.on('renderControl', (ev) => {
             break;
     }
 });
+
+
+$d.on('afterRender', (ev) => {
+    debugger;
+});
+
+$d.on('afterFillControls', (ev) => {
+    debugger;
+});
