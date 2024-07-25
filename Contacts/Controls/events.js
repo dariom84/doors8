@@ -6,7 +6,7 @@ debugger;
 var fn = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/functions.mjs', fresh: true, url: true }));
 console.log(fn.saludar());
 
-//Ejemplo include de un modulo de funciones
+//Ejemplo include de un modulo de renderControls
 var rc = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/renderControls.mjs', fresh: true, url: true }));
 
 //Ejemplo de un seach a la carpeta de areas por id
