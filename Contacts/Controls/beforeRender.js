@@ -26,12 +26,13 @@ $d.on('renderControl', (ev) => {
     var ctlName = ctx.ctl.NAME;
 
     switch (ctlName) {
-        case 'name':
-            debugger;
-            break;
-        case 'date_birth':
+        case 'date_birth': //control de tipo datepicker, le deshabilito una fecha
             debugger;
             ctx.bsctl.datetimepicker('disabledDates', ['26/7/2024']);
+            break;
+        case 'htmlRaw_Message':
+            debugger;
+            ctx.$this.append(`<h3>${doc.surname}, ${doc.name}</h3>`);
             break;
     }
 });
