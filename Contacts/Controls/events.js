@@ -16,7 +16,7 @@ var res = await fldAreas.search({
 
 console.log(res);
 
-//pagina/documento actual que se esta dibujando
+//pagina/documento actual que se esta dibujando 
 var $d = $(document);
 
 //Me subo al evento renderControl y pregunto por cada control que va dibujar
