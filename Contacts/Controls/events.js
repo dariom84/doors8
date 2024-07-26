@@ -25,6 +25,8 @@ var $d = $(document);
 
 //Me subo al evento renderControl y pregunto por cada control que va dibujar
 $d.on('renderControl', (ev) => {
+    rc.ownerRepo = ctx.owner;
+    rc.owner = ctx.repo;
     rc.renderControls(ev.detail);
 });
 
