@@ -11,7 +11,6 @@ $d.on('renderControl', async (ev) => {
     await rc.renderControl(ctx, ev.detail);
 });
 
-
 $d.on('afterRender', (ev) => {
     console.log("afterRender desde repo");
 });
