@@ -1,4 +1,4 @@
-export async function renderControl(ctx){
+export async function render(ctx){
     let area = await getArea();
 
     if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, ${doc.fields('NAME').value}, area: ${area}</h3>`);

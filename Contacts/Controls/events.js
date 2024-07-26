@@ -8,7 +8,7 @@ var $d = $(document);
 
 //Me subo al evento renderControl y pregunto por cada control que va dibujar
 $d.on('renderControl', async (ev) => {
-    await rc.renderControls(ctx, ev.detail);
+    await rc.renderControl(ctx, ev.detail);
 });
 
 
