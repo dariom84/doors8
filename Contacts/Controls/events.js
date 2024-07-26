@@ -20,8 +20,8 @@ console.log(res);
 var $d = $(document);
 
 //Me subo al evento renderControl y pregunto por cada control que va dibujar
-$d.on('renderControl', (ev) => {
-    rc.renderControls(ev.detail);
+$d.on('renderControl', async (ev) => {
+    await rc.renderControls(ev.detail);
 });
 
 
