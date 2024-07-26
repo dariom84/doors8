@@ -1,3 +1,5 @@
+var ctrlHtmlRawMessage = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/Controls/htmlRaw_Message.mjs', fresh: true, url: true }));
+
 export function renderControl(ctx){
     var ctlName = ctx.ctl.NAME;
 
@@ -9,7 +11,8 @@ export function renderControl(ctx){
             break;
         case 'htmlRaw_Message':
             debugger;
-            if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, ${doc.fields('NAME').value}</h3>`);
+            //if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, ${doc.fields('NAME').value}</h3>`);
+            ctrlHtmlRawMessage(ctx);
             break;
     }
 }
