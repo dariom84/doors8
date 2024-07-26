@@ -1,7 +1,4 @@
-export let ownerRepo;
-export let repo;
-
-var ctrlHtmlRawMessage = await import(gitCdn({ owner: ownerRepo, repo: repo, path: '/Contacts/Controls/htmlRaw_Message.mjs', fresh: true, url: true }));
+var ctrlHtmlRawMessage = await import(gitCdn({ owner: 'dariom84', repo: 'doors8', path: '/Contacts/Controls/htmlRaw_Message.mjs', fresh: true, url: true }));
 
 export function renderControls(ctx){
     var ctlName = ctx.ctl.NAME;
