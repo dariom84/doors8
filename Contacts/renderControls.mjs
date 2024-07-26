@@ -1,6 +1,7 @@
-var ctrlHtmlRawMessage = await import(gitCdn({ owner: 'dariom84', repo: 'doors8', path: '/Contacts/Controls/htmlRaw_Message.mjs', fresh: true, url: true }));
+export async function renderControls(ctx){
+    var ctrlHtmlRawMessage = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/Controls/htmlRaw_Message.mjs', fresh: true, url: true }));
 
-export function renderControls(ctx){
+    
     var ctlName = ctx.ctl.NAME;
 
     switch (ctlName) {
