@@ -18,3 +18,7 @@ $d.on('afterRender', (ev) => {
 $d.on('afterFillControls', (ev) => {
     console.log("afterFillControls desde repo");
 });
+
+$d.on('beforeSave', (ev) => {
+    console.log("beforeSave desde repo");
+});
