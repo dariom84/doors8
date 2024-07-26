@@ -11,8 +11,7 @@ export async function renderControls(ctx, ctxDetail){
             break;
         case 'htmlRaw_Message':
             debugger;
-            //if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, ${doc.fields('NAME').value}</h3>`);
-            ctrlHtmlRawMessage.renderControl(ctxDetail);
+            await ctrlHtmlRawMessage.renderControl(ctxDetail);
             break;
     }
 }
