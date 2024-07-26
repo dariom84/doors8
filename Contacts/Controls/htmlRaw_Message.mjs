@@ -1,7 +1,9 @@
 export async function render(ctx){
     let area = await getArea(doc.fields('areaid').value);
 
-    if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, ${doc.fields('NAME').value}, area: ${area}</h3>`);
+    if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, 
+                                            ${doc.fields('NAME').value}, 
+                                            Area: ${area}</h3>`);
 }
 
 //Ejemplo de un seach a la carpeta de areas por id
