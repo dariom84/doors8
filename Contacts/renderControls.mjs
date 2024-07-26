@@ -11,7 +11,7 @@ export async function renderControl(ctx, evnDetail){
             break;
         case 'htmlRaw_Message':
             debugger;
-            await ctrlHtmlRawMessage.renderControl(evnDetail);
+            await ctrlHtmlRawMessage.render(evnDetail);
             break;
     }
 }

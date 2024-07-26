@@ -6,6 +6,7 @@ export async function render(ctx){
 
 async function getArea(){
     //Ejemplo de un seach a la carpeta de areas por id
+    //await dSession.folders("/brevo_root/connections",1001)
     var fldAreas = await dSession.foldersGetFromId(1008);
     var res = await fldAreas.search({
                                         fields: 'id, area',
