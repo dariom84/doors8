@@ -1,7 +1,7 @@
 console.log("BeforeRender desde repo...");
 
 //Ejemplo include de un modulo de renderControls
-var rc = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/Client/Controls/renderControls.mjs', fresh: true, url: true }));
+var rc = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/Client/renderControls.mjs', fresh: true, url: true }));
 
 //pagina/documento actual que se esta dibujando 
 var $d = $(document);
