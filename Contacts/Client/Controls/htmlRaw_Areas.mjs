@@ -33,7 +33,7 @@ async function drawTable(opsSearch, opsTable){
 async function drawTableSearch(opsSearch, pathSearch){
     var res = {};
 
-    if (pathFolder) {
+    if (pathSearch) {
         var fld = await dSession.folders(pathSearch, 1001);
         res = await fld.search(opsSearch);
     }
