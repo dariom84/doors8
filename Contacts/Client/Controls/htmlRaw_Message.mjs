@@ -1,7 +1,7 @@
-export async function render(options){
+export async function render(ctx){
     let area = await getArea(doc.fields('areaid').value);
 
-    if (!doc.isNew) options.ctx.$this.append(`<h3>${doc.fields('surname').value}, 
+    if (!doc.isNew) ctx.$this.append(`<h3>${doc.fields('surname').value}, 
                                             ${doc.fields('NAME').value}, 
                                             Area: ${area}</h3>`);
 }
