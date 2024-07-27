@@ -4,7 +4,7 @@ export async function render(options){
 
     let opsSearch = {
                         fields: 'id, area',
-                        formula: `id = ${idArea}`,
+                        formula: '',
                         order: 'id asc',
                         maxDocs: 0
                     }
