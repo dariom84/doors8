@@ -6,10 +6,10 @@ export async function renderControl(ctx, evnDetail){
 
     switch (ctlName) {
         case 'date_birth': 
-            ctrldateBirth.render(options);
+            ctrldateBirth.render(ctx, evnDetail);
             break;
         case 'htmlRaw_Message':
-            await ctrlHtmlRawMessage.render(options);
+            await ctrlHtmlRawMessage.render(evnDetail);
             break;
     }
 }
