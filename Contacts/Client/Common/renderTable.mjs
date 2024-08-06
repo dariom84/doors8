@@ -37,7 +37,7 @@ export async function drawTable(opsSearch, opsTable){
     return table;
 }
 
-export async function drawTableSearch(opsSearch, pathSearch){
+async function drawTableSearch(opsSearch, pathSearch){
     var res = {};
 
     if (pathSearch) {
