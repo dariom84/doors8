@@ -1,5 +1,4 @@
 export async function render(options){
-    //let area = await getArea(doc.fields('areaid').value);
     debugger;
 
     let opsSearch = {
@@ -31,7 +30,7 @@ async function drawTable(opsSearch, opsTable){
     if (resSearch && columnsValue){
         let fieldsValue = opsSearch.fields;
 
-        table = `<table class='table table-striped'><thead class='table-dark'><tr>`;
+        table = `<table id='${opsSearch.id}' class='table table-striped'><thead class='table-dark'><tr>`;
 
         let columnsArray = columnsValue.split(',');
         let fieldsArray = fieldsValue.split(',')
