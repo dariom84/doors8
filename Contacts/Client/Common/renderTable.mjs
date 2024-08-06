@@ -1,7 +1,7 @@
 export async function drawTable(opsSearch, opsTable){
     let table;
 
-    let resSearch = await drawTableSearch(opsSearch, opsTable.path);
+    let resSearch = await tableSearch(opsSearch, opsTable.path);
     let columnsValue = opsTable.columns;
 
     if (resSearch && columnsValue){
@@ -37,7 +37,7 @@ export async function drawTable(opsSearch, opsTable){
     return table;
 }
 
-async function drawTableSearch(opsSearch, pathSearch){
+async function tableSearch(opsSearch, pathSearch){
     var res = {};
 
     if (pathSearch) {
