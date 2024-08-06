@@ -35,12 +35,14 @@ async function drawTable(opsSearch, opsTable){
         let columnsArray = columnsValue.split(',');
         let fieldsArray = fieldsValue.split(',')
 
+        //Armo la cabecera con las columnas
         columnsArray.forEach(column => {
             table += `<th scope='col'>${column}</th>`;
         });
 
         table += `</tr></thead><tbody>`;
 
+        //Armo el body de la tabla
         resSearch.forEach(elem => {
             table += `<tr>`;
 
