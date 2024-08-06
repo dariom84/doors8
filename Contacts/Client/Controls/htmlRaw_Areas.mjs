@@ -17,7 +17,10 @@ export async function render(options){
 
     let table = await drawTable(opsSearch, opsTable);
 
-    if (!doc.isNew) options.evDetail.$this.append(`<h4>Listado de Areas</h4>`);
+    //if (!doc.isNew) options.evDetail.$this.append(`<h4>Listado de Areas</h4>`);
+    if (!doc.isNew) {
+        options.evDetail.$this.append(`<h4>${table}</h4>`);
+    }
 }
 
 async function drawTable(opsSearch, opsTable){
