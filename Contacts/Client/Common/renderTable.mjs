@@ -1,29 +1,4 @@
-export async function render(options){
-    debugger;
-
-    var mjsRenderTable = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Common/renderTable.mjs', fresh: true, url: true }));
-
-    let opsSearch = {
-                        fields: 'id, area',
-                        formula: '',
-                        order: 'id asc',
-                        maxDocs: 0
-                    }
-
-    let opsTable =  {
-                        path: '/contacts_root/admin/area',
-                        id: 'areas',
-                        columns: 'Nro,Area'
-                    }
-
-    let table = await mjsRenderTable.drawTable(opsSearch, opsTable);
-
-    if (!doc.isNew) {
-        options.evDetail.$this.append(table);
-    }
-}
-
-/*async function drawTable(opsSearch, opsTable){
+export async function drawTable(opsSearch, opsTable){
     let table;
 
     let resSearch = await drawTableSearch(opsSearch, opsTable.path);
@@ -62,7 +37,7 @@ export async function render(options){
     return table;
 }
 
-async function drawTableSearch(opsSearch, pathSearch){
+export async function drawTableSearch(opsSearch, pathSearch){
     var res = {};
 
     if (pathSearch) {
@@ -71,4 +46,4 @@ async function drawTableSearch(opsSearch, pathSearch){
     }
 
     return res;
-}*/
+}
