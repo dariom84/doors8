@@ -23,17 +23,27 @@ export async function render(options){
 }
 
 async function drawTable(opsSearch, opsTable){
-    let table = "<p>aca va mi tabla</>";
+    let table;
     let resSearch = await drawTableSearch(opsSearch, opsTable.path);
 
     let columnsValue = opsTable.columns;
 
     if (resSearch && columnsValue){
+        table = "<table><thead><tr>";
+
         let columnsArray = columnsValue.split(',');
 
         columnsArray.forEach(column => {
-            console.log(column);
+            table += `<th>${column}</th>`;
         });
+
+        table += "</tr</thead>";
+
+        table += "<tbody>"
+
+        
+
+        table += "</tbody></table>"
     }
 
     return table;
