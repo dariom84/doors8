@@ -12,6 +12,7 @@ export async function render(options){
     let opsTable =  {
                         path: '/contacts_root/admin/area',
                         id: 'areas',
+                        columns: 'Nro,Area'
                     }
 
     let table = await drawTable(opsSearch, opsTable);
@@ -23,8 +24,14 @@ async function drawTable(opsSearch, opsTable){
     let table = "<p>aca va mi tabla</>";
     let resSearch = await drawTableSearch(opsSearch, opsTable.path);
 
-    if (resSearch){
+    let columnsValue = opsTable.columns;
 
+    if (resSearch && columnsValue){
+        let columnsArray = columnsValue.split(',');
+
+        columnsArray.forEach(column => {
+            console.log(column);
+        });
     }
 
     return table;
