@@ -29,9 +29,12 @@ async function drawTable(opsSearch, opsTable){
     let columnsValue = opsTable.columns;
 
     if (resSearch && columnsValue){
+        let fieldsValue = resSearch.fields;
+
         table = `<table class='table table-striped'><thead class='table-dark'><tr>`;
 
         let columnsArray = columnsValue.split(',');
+        let fieldsArray = fieldsValue.split(',')
 
         columnsArray.forEach(column => {
             table += `<th scope='col'>${column}</th>`;
@@ -41,8 +44,12 @@ async function drawTable(opsSearch, opsTable){
 
         resSearch.forEach(elem => {
             table += `<tr>`;
-                table += `<td>${elem.ID}</td>`
-                table += `<td>${elem.AREA}</td>`;
+
+            fieldsArray.forEach(field => {
+                let sField = field.trim().toUpperCase();
+                table += `<td>${elem[sField]}</td>`;
+            });
+
             table += `</tr>`;
         });
 
