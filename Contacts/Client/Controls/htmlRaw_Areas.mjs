@@ -24,8 +24,8 @@ export async function render(options){
 
 async function drawTable(opsSearch, opsTable){
     let table;
-    let resSearch = await drawTableSearch(opsSearch, opsTable.path);
 
+    let resSearch = await drawTableSearch(opsSearch, opsTable.path);
     let columnsValue = opsTable.columns;
 
     if (resSearch && columnsValue){
@@ -39,7 +39,12 @@ async function drawTable(opsSearch, opsTable){
 
         table += `</tr></thead><tbody>`;
 
-        
+        resSearch.forEach(elem => {
+            table += `<tr>`;
+                table += `<td>${elem.ID}</td>`
+                table += `<td>${elem.AREA}</td>`;
+            table += `</tr>`;
+        });
 
         table += `</tbody></table>`;
     }
