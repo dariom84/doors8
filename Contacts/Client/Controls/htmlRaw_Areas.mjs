@@ -20,7 +20,7 @@ export async function render(options){
 }
 
 async function drawTable(opsSearch, opsTable){
-    let table = "<p>aca va mi tabla</>"
+    let table = "<p>aca va mi tabla</>";
     let resSearch = await drawTableSearch(opsSearch, opsTable.path);
 
     if (resSearch){
