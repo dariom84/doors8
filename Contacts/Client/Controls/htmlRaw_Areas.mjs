@@ -29,19 +29,19 @@ async function drawTable(opsSearch, opsTable){
     let columnsValue = opsTable.columns;
 
     if (resSearch && columnsValue){
-        table = "<table><thead><tr>";
+        table = "<table class='table table-striped'><thead class='table-dark'><tr>";
 
         let columnsArray = columnsValue.split(',');
 
         columnsArray.forEach(column => {
-            table += `<th>${column}</th>`;
+            table += `<th scope='col'>${column}</th>`;
         });
 
         table += "</tr</thead>";
 
         table += "<tbody>"
 
-        
+
 
         table += "</tbody></table>"
     }
