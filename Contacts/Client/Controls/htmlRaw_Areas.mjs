@@ -29,7 +29,7 @@ async function drawTable(opsSearch, opsTable){
     let columnsValue = opsTable.columns;
 
     if (resSearch && columnsValue){
-        let fieldsValue = resSearch.fields;
+        let fieldsValue = opsSearch.fields;
 
         table = `<table class='table table-striped'><thead class='table-dark'><tr>`;
 
