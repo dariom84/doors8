@@ -24,4 +24,5 @@ $d.on('afterFillControls', (ev) => {
 
 $d.on('beforeSave', (ev) => {
     console.log("beforeSave desde repo");
+    doc.fields("name").value = "probando...";
 });
