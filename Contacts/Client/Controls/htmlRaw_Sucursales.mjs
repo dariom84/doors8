@@ -1,7 +1,7 @@
 export async function render(options){
     debugger;
 
-    var mjsRenderTable = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Common/renderTable.mjs', fresh: true, url: true }));
+    var mjsRenderTable = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Common/renderTable.mjs', fresh: ctx.fresh, url: true }));
 
     let opsSearch = {
                         fields: 'id, name, city, country',
