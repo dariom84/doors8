@@ -30,7 +30,7 @@ async function drawTable(opsSearch, opsTable){
     if (resSearch && columnsValue){
         let fieldsValue = opsSearch.fields;
 
-        table = `<p>Tabla desde Branch Nueva<p><table id='${opsTable.id}' class='table table-striped'><thead class='table-dark'><tr>`;
+        table = `<table id='${opsTable.id}' class='table table-striped'><thead class='table-dark'><tr>`;
 
         let columnsArray = columnsValue.split(',');
         let fieldsArray = fieldsValue.split(',')
