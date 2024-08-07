@@ -1,7 +1,7 @@
 console.log("BeforeRender desde branch Doors8_Rama0001...");
 
 //Ejemplo include de un modulo de renderControls
-var rc = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/Client/Lib/renderControls.mjs', fresh: true, url: true, ref: ctx.ref }));
+var rc = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/Contacts/Client/Lib/renderControls.mjs', fresh: ctx.fresh, url: true, ref: ctx.ref }));
 
 //pagina/documento actual que se esta dibujando 
 var $d = $(document);
