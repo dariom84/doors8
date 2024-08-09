@@ -8,14 +8,14 @@ export async function render(options){
     $btn.click(() => {
         debugger;
 
-        /*dSession.node.exec({
+        dSession.node.exec({
             code: {
                     owner: 'dariom84',
                     repo: 'doors8',
                     path: '/Contacts/Server/test.js'
                 },
             payload: { saludo: 'hola'}
-        })*/
+        })
 
     });
 }
