@@ -3,7 +3,7 @@ export async function render(options){
 
     let $btn = $('<button/>', {
         class: 'btn btn-primary',
-    }).append('Node').appendTo(options.ctx.$this);
+    }).append('Node').appendTo(options.evDetail.$this);
 
     $btn.click(() => {
         debugger;
