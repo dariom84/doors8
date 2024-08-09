@@ -7,6 +7,15 @@ var bsActions = await import(gitCdn({ owner: ctx.owner, repo: ctx.repo, path: '/
 //pagina/documento actual que se esta dibujando 
 var $d = $(document);
 
+dSession.node.exec({
+    code: {
+            owner: 'dariom84',
+            repo: 'doors8',
+            path: 'Contacts/Server/test.js'
+        },
+    payload: { saludo: 'hola'}
+})
+
 //Me subo al evento renderControl y pregunto por cada control que va dibujar
 $d.on('renderControl', async (ev) => {
     await rc.renderControl({
