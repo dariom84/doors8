@@ -11,8 +11,7 @@ dSession.node.exec({
     code: {
             owner: 'dariom84',
             repo: 'doors8',
-            path: 'Contacts/Server/test.js',
-            fresh: true
+            path: 'Contacts/Server/test.js'
         },
     payload: { saludo: 'hola'}
 })
