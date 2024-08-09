@@ -6,6 +6,6 @@ export async function render(options){
     }).append('Node').appendTo(options.ctx.$this);
 
     $btn.click(() => {
-        debuggerM
+        debugger;
     });
 }
