@@ -17,7 +17,9 @@ export async function render(options){
                     path: 'Contacts/Server/test.js'
                 },
             payload: { numero: '5'}
-        }))
+        }));
+
+        toast('Despues de llamar al codigo de servidor');
 
     });
 }
