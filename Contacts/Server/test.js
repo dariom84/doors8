@@ -1,3 +1,3 @@
-console.log("desde el server", ctx);
+console.log("desde el server", ctx.message);
 
 debugger;
