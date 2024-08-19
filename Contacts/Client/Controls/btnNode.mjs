@@ -17,7 +17,8 @@ export async function render(options){
             code: {
                     owner: 'dariom84',
                     repo: 'doors8',
-                    path: 'Contacts/Server/test.js'
+                    path: 'Contacts/Server/test.js',
+                    fresh: true
                 },
             payload: { numero: '5'}
         }));
