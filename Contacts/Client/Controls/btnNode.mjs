@@ -5,17 +5,17 @@ export async function render(options){
         class: 'btn btn-primary',
     }).append('Node').appendTo(options.evDetail.$this);
 
-    $btn.click(() => {
+    $btn.click(async () => {
         debugger;
 
-        dSession.node.exec({
+        toast('Return: ' + await dSession.node.exec({
             code: {
                     owner: 'dariom84',
                     repo: 'doors8',
                     path: 'Contacts/Server/test.js'
                 },
-            payload: { saludo: 'hola'}
-        })
+            payload: { numero: '5'}
+        }))
 
     });
 }
