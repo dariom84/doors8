@@ -1,3 +1,6 @@
+//Cacheado: https://cdn.jsdelivr.net/gh/dariom84/doors8/Contacts/Client/Controls/btnNode.mjs
+//Refresh: https://cdn.cloudycrm.net/gh/dariom84/doors8/Contacts/Client/Controls/btnNode.mjs?_fresh=1
+
 export async function render(options){
     debugger;
 
@@ -18,8 +21,6 @@ export async function render(options){
                 },
             payload: { numero: '5'}
         }));
-
-        toast('Despues de llamar al codigo de servidor');
 
     });
 }
