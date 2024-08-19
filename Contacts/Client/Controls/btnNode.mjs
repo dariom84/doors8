@@ -8,6 +8,8 @@ export async function render(options){
     $btn.click(async () => {
         debugger;
 
+        toast('Antes de llamar al codigo de servidor');
+
         toast('Return: ' + await dSession.node.exec({
             code: {
                     owner: 'dariom84',
