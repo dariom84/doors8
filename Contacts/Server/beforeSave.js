@@ -1,3 +1,5 @@
+console.log("beforesave server");
+
 //var wkfMod = await mlib.gitImport({ repo: 'Global', path: 'worklow.mjs' });
 //wkfMod.setContext(ctx);
 
