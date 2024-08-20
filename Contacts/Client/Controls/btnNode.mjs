@@ -1,5 +1,5 @@
 //Cacheado: https://cdn.jsdelivr.net/gh/dariom84/doors8/Contacts/Client/Controls/btnNode.mjs
-//Refresh: https://cdn.cloudycrm.net/gh/dariom84/doors8/Contacts/Client/Controls/btnNode.mjs?_fresh=1
+//Refresh: https://cdn.cloudycrm.net/ghcv/dariom84/doors8/Contacts/Client/Controls/btnNode.mjs?_fresh=1
 
 export async function render(options){
     debugger;
