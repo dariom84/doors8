@@ -1,4 +1,4 @@
-var wkMod = await gitImport({ repo: 'Global', path: 'worklow.mjs' });
+var wkMod = await mlib.gitImport({ repo: 'Global', path: 'worklow.mjs' });
 wkMod.setContext(ctx);
 
 wkMod.requeridos('surname');
