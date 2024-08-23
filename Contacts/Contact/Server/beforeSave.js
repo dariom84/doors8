@@ -22,7 +22,7 @@ if (doc.fields("newarea").valueChanged){
     
     if (res.length == 0){
         var docArea = await fldAreas.documentsNew();
-        docArea.fields("id").value = 5;
+        //docArea.fields("id").value = 5;
         docArea.fields("area").value = doc.fields("newarea").value;
         await docArea.save();
     }
