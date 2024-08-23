@@ -13,7 +13,7 @@ wkfMod.requeridos('surname');
 wkfMod.raiseWkfErrors();
 
 //Busco si existe la nueva area
-if (doc.fields("newarea").valueChanged){
+/*if (doc.fields("newarea").valueChanged){
     var fldAreas = await dSession.folders("/contacts_root/admin/area", 1001);
     res = await fldAreas.search({
                                 fields: 'id',
@@ -26,4 +26,4 @@ if (doc.fields("newarea").valueChanged){
         docArea.fields("area").value = doc.fields("newarea").value;
         await docArea.save();
     }
-}
+}*/
