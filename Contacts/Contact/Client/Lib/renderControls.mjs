@@ -1,9 +1,9 @@
 export async function renderControl(options){
-    var ctrlHtmlRawMessage = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Controls/htmlRaw_Message.mjs', fresh: options.ctx.fresh, url: true }));
-    var ctrldateBirth = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Controls/date_birth.mjs', fresh: options.ctx.fresh, url: true }));
-    var ctrlhtmlRawAreas = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Controls/htmlRaw_Areas.mjs', fresh: options.ctx.fresh, url: true }));
-    var ctrlhtmlRawSucursales = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Controls/htmlRaw_Sucursales.mjs', fresh: options.ctx.fresh, url: true }));
-    var ctrlBtnNode = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Client/Controls/btnNode.mjs', fresh: options.ctx.fresh, url: true }));
+    var ctrlHtmlRawMessage = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Contact/Client/Controls/htmlRaw_Message.mjs', fresh: options.ctx.fresh, url: true }));
+    var ctrldateBirth = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Contact/Client/Controls/date_birth.mjs', fresh: options.ctx.fresh, url: true }));
+    var ctrlhtmlRawAreas = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Contact/Client/Controls/htmlRaw_Areas.mjs', fresh: options.ctx.fresh, url: true }));
+    var ctrlhtmlRawSucursales = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Contact/Client/Controls/htmlRaw_Sucursales.mjs', fresh: options.ctx.fresh, url: true }));
+    var ctrlBtnNode = await import(gitCdn({ owner: options.ctx.owner, repo: options.ctx.repo, path: '/Contacts/Contact/Client/Controls/btnNode.mjs', fresh: options.ctx.fresh, url: true }));
 
     var ctlName = options.evDetail.ctl.NAME
 

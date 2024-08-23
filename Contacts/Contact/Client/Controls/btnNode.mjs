@@ -1,5 +1,5 @@
-//Cacheado: https://cdn.jsdelivr.net/gh/dariom84/doors8/Contacts/Client/Controls/btnNode.mjs
-//Refresh: https://cdn.cloudycrm.net/ghcv/dariom84/doors8/Contacts/Client/Controls/btnNode.mjs?_fresh=1
+//Cacheado: https://cdn.jsdelivr.net/gh/dariom84/doors8/Contacts/Contact/Client/Controls/btnNode.mjs
+//Refresh: https://cdn.cloudycrm.net/ghcv/dariom84/doors8/Contacts/Contact/Client/Controls/btnNode.mjs?_fresh=1
 
 export async function render(options){
     debugger;
@@ -15,7 +15,7 @@ export async function render(options){
             code: {
                     owner: 'dariom84',
                     repo: 'doors8',
-                    path: '/Contacts/Server/test.js',
+                    path: '/Contacts/Contact/Server/test.js',
                     fresh: options.ctx.fresh
                 },
             payload: { numero: '5'}
