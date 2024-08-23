@@ -8,4 +8,4 @@ wkfMod.setContext(ctx);
 wkfMod.requeridos('area');
 wkfMod.raiseWkfErrors();
 
-doc.fields("id").value = await dSession.nextVal("areas");
+doc.fields("id").value = await dSession.db.nextVal("areas");
